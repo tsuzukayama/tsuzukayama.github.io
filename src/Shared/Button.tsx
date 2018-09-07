@@ -1,4 +1,4 @@
-import styled from "../Theme";
+import styled from '../Theme';
 
 export const Button = styled.button`
   font-family: ${props => props.theme.fontFamily};
@@ -6,6 +6,8 @@ export const Button = styled.button`
 
   margin: 16px;
   padding: 8px 16px;
+
+  min-width: 100px;
 
   border: 0;
   box-sizing: border-box;

@@ -1,8 +1,7 @@
-import * as React from "react";
-import styled from "../Theme";
+import * as React from 'react';
+import styled from '../Theme';
 
 const Container = styled.div`
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +12,15 @@ const Container = styled.div`
   padding: 0px 64px;
 
   background: linear-gradient(180deg, ${props => props.theme.color.white} 65%, ${props => props.theme.color.dark} 35%);
+`;
+
+const Content = styled.div`
+  max-width: 800px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Title = styled.p`
@@ -40,6 +48,11 @@ const SkillsContainer = styled.div`
   &:first-child {
     border-left: none;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Skill = styled.div`
@@ -47,9 +60,7 @@ const Skill = styled.div`
   flex-direction: column;
 
   text-align: center;
-  margin-top: 8px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 16px;
 
   &:last-child {
     border-right: none;
@@ -64,12 +75,20 @@ const Skill = styled.div`
   }
 `;
 
-const VerticalDivider = styled.div`
+const Divider = styled.div`
   width: 1px;
   margin-top: 16px;
   margin-bottom: 16px;
 
   border-left: 1px solid ${props => props.theme.color.lightGrey};
+
+  @media (max-width: 800px) {
+    height: 100%;
+    border-top: 1px solid ${props => props.theme.color.lightGrey};
+    border-left: none;
+    width: 80%;
+    margin: 0px;  
+  }
 `;
 
 const SkillsListTitle = styled.p`
@@ -92,50 +111,51 @@ const About: React.SFC<{}> = () => (
   <>
 
     <Container>
-
-      <Title>Hi</Title>
-      <Text>
-        I am a 22 year old frontend (currently) and backend developer, currently graduating in Computer Science at Universidade Federal do ABC, Brasil.
+      <Content>
+        <Title>Hi</Title>
+        <Text>
+          I am a 22 year old frontend (currently) and backend developer, currently graduating in Computer Science at Universidade Federal do ABC, Brasil.
       <br />
-        I am passionate about combining beautiful designs with great usability. The web should be about ease of use in the first place.
+          I am passionate about combining beautiful designs with great usability. The web should be about ease of use in the first place.
       <br />
-        My current focus is in improving my frontend skills with React, and in studying the core concepts of general and UX design.
+          My current focus is in improving my frontend skills with React, and in studying the core concepts of general and UX design.
       <br />
-        Another area that is currentlyin my interests is project planning, where I have been focusing on Agile methodologies, in order to improve my current workplace.
+          Another area that is currentlyin my interests is project planning, where I have been focusing on Agile methodologies, in order to improve my current workplace.
     </Text>
-      <SkillsContainer>
-        <Skill>
-          <h2>Design</h2>
-          <p>Minimalist design, usability over aesthetic.</p>
-          <SkillsListTitle>Skills:</SkillsListTitle>
-          <SkillList>
-            <SkillListItem>Adobe XD</SkillListItem>
-          </SkillList>
-        </Skill>
-        <VerticalDivider />
-        <Skill>
-          <h2>Front-end</h2>
-          <p>Reusable components, automated tasks, fast development.</p>
-          <SkillsListTitle>Skills:</SkillsListTitle>
-          <SkillList>
-            <SkillListItem>React/Angular/VanillaJS</SkillListItem>
-            <SkillListItem>Typescript</SkillListItem>
-            <SkillListItem>Sass</SkillListItem>
-            <SkillListItem>Jest</SkillListItem>
-            <SkillListItem>Gulp</SkillListItem>
-          </SkillList>
-        </Skill>
-        <VerticalDivider />
-        <Skill>
-          <h2>Back-end</h2>
-          <p>Clean code, simple but organized architecture.</p>
-          <SkillsListTitle>Skills:</SkillsListTitle>
-          <SkillList>
-            <SkillListItem>.Net/Java/Python/PHP</SkillListItem>
-            <SkillListItem>SQLServer/MySQL/MongoDB</SkillListItem>
-          </SkillList>
-        </Skill>
-      </SkillsContainer>
+        <SkillsContainer>
+          <Skill>
+            <h2>Design</h2>
+            <p>Minimalist design, usability over aesthetic.</p>
+            <SkillsListTitle>Skills:</SkillsListTitle>
+            <SkillList>
+              <SkillListItem>Adobe XD</SkillListItem>
+            </SkillList>
+          </Skill>
+          <Divider />
+          <Skill>
+            <h2>Front-end</h2>
+            <p>Reusable components, automated tasks, fast development.</p>
+            <SkillsListTitle>Skills:</SkillsListTitle>
+            <SkillList>
+              <SkillListItem>React/Angular/VanillaJS</SkillListItem>
+              <SkillListItem>Typescript</SkillListItem>
+              <SkillListItem>Sass</SkillListItem>
+              <SkillListItem>Jest</SkillListItem>
+              <SkillListItem>Gulp</SkillListItem>
+            </SkillList>
+          </Skill>
+          <Divider />
+          <Skill>
+            <h2>Back-end</h2>
+            <p>Clean code, simple but organized architecture.</p>
+            <SkillsListTitle>Skills:</SkillsListTitle>
+            <SkillList>
+              <SkillListItem>.Net/Java/Python/PHP</SkillListItem>
+              <SkillListItem>SQLServer/MySQL/MongoDB</SkillListItem>
+            </SkillList>
+          </Skill>
+        </SkillsContainer>
+      </Content>
     </Container>
   </>
 );

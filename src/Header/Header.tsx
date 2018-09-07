@@ -1,8 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 import * as backgroundImage from '../Assets/Imgs/header-background.png';
 import * as logo from '../Assets/Imgs/logo.png';
-import { Button, TextButton } from "../Shared/Button";
-import styled from "../Theme";
+import { Button, TextButton } from '../Shared/Button';
+import styled from '../Theme';
 
 const Container = styled.div`
   height: 100vh;
@@ -64,7 +64,8 @@ const Logo = styled.img`
 `;
 
 const Divider = styled.hr`
-  width: 50%;
+  max-width: 800px;
+  width: 100%;
 
   margin-bottom: 100px;
 
@@ -79,6 +80,7 @@ const Divider = styled.hr`
 
   border-bottom: 1px solid ${props => props.theme.color.dark};
 `;
+
 const Header: React.SFC<{}> = () => (
   <Container>
     <Navbar>
