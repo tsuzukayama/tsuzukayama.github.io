@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Element } from 'react-scroll';
 import styled from '../Theme';
 
 const Container = styled.div`
@@ -108,7 +109,7 @@ const SkillListItem = styled.li`
 `;
 
 const About: React.SFC<{}> = () => (
-  <>
+  <Element name="About">
 
     <Container>
       <Content>
@@ -122,42 +123,44 @@ const About: React.SFC<{}> = () => (
       <br />
           Another area that is currentlyin my interests is project planning, where I have been focusing on Agile methodologies, in order to improve my current workplace.
     </Text>
-        <SkillsContainer>
-          <Skill>
-            <h2>Design</h2>
-            <p>Minimalist design, usability over aesthetic.</p>
-            <SkillsListTitle>Skills:</SkillsListTitle>
-            <SkillList>
-              <SkillListItem>Adobe XD</SkillListItem>
-            </SkillList>
-          </Skill>
-          <Divider />
-          <Skill>
-            <h2>Front-end</h2>
-            <p>Reusable components, automated tasks, fast development.</p>
-            <SkillsListTitle>Skills:</SkillsListTitle>
-            <SkillList>
-              <SkillListItem>React/Angular/VanillaJS</SkillListItem>
-              <SkillListItem>Typescript</SkillListItem>
-              <SkillListItem>Sass</SkillListItem>
-              <SkillListItem>Jest</SkillListItem>
-              <SkillListItem>Gulp</SkillListItem>
-            </SkillList>
-          </Skill>
-          <Divider />
-          <Skill>
-            <h2>Back-end</h2>
-            <p>Clean code, simple but organized architecture.</p>
-            <SkillsListTitle>Skills:</SkillsListTitle>
-            <SkillList>
-              <SkillListItem>.Net/Java/Python/PHP</SkillListItem>
-              <SkillListItem>SQLServer/MySQL/MongoDB</SkillListItem>
-            </SkillList>
-          </Skill>
-        </SkillsContainer>
+        <Element name="Skills">
+          <SkillsContainer>
+            <Skill>
+              <h2>Design</h2>
+              <p>Minimalist design, usability over aesthetic.</p>
+              <SkillsListTitle>Skills:</SkillsListTitle>
+              <SkillList>
+                <SkillListItem>Adobe XD</SkillListItem>
+              </SkillList>
+            </Skill>
+            <Divider />
+            <Skill>
+              <h2>Front-end</h2>
+              <p>Reusable components, automated tasks, fast development.</p>
+              <SkillsListTitle>Skills:</SkillsListTitle>
+              <SkillList>
+                <SkillListItem>React/Angular/VanillaJS</SkillListItem>
+                <SkillListItem>Typescript</SkillListItem>
+                <SkillListItem>Sass</SkillListItem>
+                <SkillListItem>Jest</SkillListItem>
+                <SkillListItem>Gulp</SkillListItem>
+              </SkillList>
+            </Skill>
+            <Divider />
+            <Skill>
+              <h2>Back-end</h2>
+              <p>Clean code, simple but organized architecture.</p>
+              <SkillsListTitle>Skills:</SkillsListTitle>
+              <SkillList>
+                <SkillListItem>.Net/Java/Python/PHP</SkillListItem>
+                <SkillListItem>SQLServer/MySQL/MongoDB</SkillListItem>
+              </SkillList>
+            </Skill>
+          </SkillsContainer>
+        </Element>
       </Content>
     </Container>
-  </>
+  </Element>
 );
 
 export default About;

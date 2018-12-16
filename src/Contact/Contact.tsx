@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Element } from 'react-scroll';
 import * as githubLogo from '../Assets/Imgs/github-logo.svg';
 import * as linkedinLogo from '../Assets/Imgs/linkedin-logo.svg';
 import * as twitterLogo from '../Assets/Imgs/twitter-logo.svg';
@@ -78,14 +79,17 @@ export class Contact extends React.Component<{}, IState>{
     change[event.target.id] = event.target.value
     this.setState(change)
   }
-  <Container>
-    <Title>Get in touch:</Title>
-    <IconList>
-      <Icon src={githubLogo} />
-      <Icon src={linkedinLogo} />
-      <Icon src={twitterLogo} />
-    </IconList>
-    <p>...or send me an email:</p>
+
+  public render = () => (
+    <Element name="Contact">
+      <Container>
+        <Title>Get in touch:</Title>
+        <IconList>
+          <Icon src={githubLogo} />
+          <Icon src={linkedinLogo} />
+          <Icon src={twitterLogo} />
+        </IconList>
+        <p>...or send me an email:</p>
         <ContainerContactForm >
           <form action="https://formspree.io/tiago.suzukayama@gmail.com" method="POST">
             <Input
@@ -113,7 +117,10 @@ export class Contact extends React.Component<{}, IState>{
             <Button type="submit">Send</Button>
           </form>
         </ContainerContactForm>
-    <Divider />
-    <p>{"Made by me, with React <3"}</p>
-  </Container>
-);
+
+        <Divider />
+        <p>{"Made by me, with React <3"}</p>
+      </Container>
+    </Element>
+  );
+}

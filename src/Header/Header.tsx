@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-scroll';
 import * as backgroundImage from '../Assets/Imgs/header-background.png';
 import * as logo from '../Assets/Imgs/logo.png';
 import { Button, TextButton } from '../Shared/Button';
@@ -84,9 +85,24 @@ const Divider = styled.hr`
 const Header: React.SFC<{}> = () => (
   <Container>
     <Navbar>
-      <Button>Contact</Button>
-      <TextButton>Skills</TextButton>
-      <TextButton>About</TextButton>
+      <Link
+        to="Contact"
+        smooth={true}
+      >
+        <Button>Contact</Button>
+      </Link>
+      <Link
+        to="Skills"
+        smooth={true}
+      >
+        <TextButton>Skills</TextButton>
+      </Link>
+      <Link
+        to="About"
+        smooth={true}
+      >
+        <TextButton>About</TextButton>
+      </Link>
     </Navbar>
     <Content>
       <Text>Designer, Front/Backend Developer & UX Enthusiast.</Text>
