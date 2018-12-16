@@ -85,9 +85,24 @@ export class Contact extends React.Component<{}, IState>{
       <Container>
         <Title>Get in touch:</Title>
         <IconList>
-          <Icon src={githubLogo} />
-          <Icon src={linkedinLogo} />
-          <Icon src={twitterLogo} />
+          <a
+            href="https://github.com/tsuzukayama"
+            target="_blank"
+          >
+            <Icon src={githubLogo} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tiago-suzukayama-80335754/"
+            target="_blank"
+          >
+            <Icon src={linkedinLogo} />
+          </a>
+          <a
+            href="https://twitter.com/tsuzukayama"
+            target="_blank"
+          >
+            <Icon src={twitterLogo} />
+          </a>
         </IconList>
         <p>...or send me an email:</p>
         <ContainerContactForm >
