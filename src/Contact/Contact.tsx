@@ -7,6 +7,11 @@ import { Input } from '../Shared/Input';
 import { TextArea } from '../Shared/TextArea';
 import styled from '../Theme';
 
+interface IState {
+  email: string;
+  subject: string;
+  message: string;
+}
 
 const Container = styled.div`
   display: flex;
@@ -36,7 +41,7 @@ const Icon = styled.img`
   height: 48px;
 `;
 
-const ContactForm = styled.form`
+const ContainerContactForm = styled.div`
   max-width: 800px;
   width: 100%;
 
@@ -60,7 +65,19 @@ const Divider = styled.hr`
 `;
 
 
-export const Contact: React.SFC<{}> = () => (
+export class Contact extends React.Component<{}, IState>{
+
+  public state = {
+    email: '',
+    message: '',
+    subject: '',
+  } as IState;
+
+  public handleChange = (event: any) => {
+    const change = {};
+    change[event.target.id] = event.target.value
+    this.setState(change)
+  }
   <Container>
     <Title>Get in touch:</Title>
     <IconList>
@@ -69,12 +86,33 @@ export const Contact: React.SFC<{}> = () => (
       <Icon src={twitterLogo} />
     </IconList>
     <p>...or send me an email:</p>
-    <ContactForm>
-      <Input label="Email" placeholder="john@doe.com" />
-      <Input label="Subject" placeholder="Freelance job" />
-      <TextArea label="Message" placeholder="Lorem Impsum" />
-    </ContactForm>
-    <Button>Send</Button>
+        <ContainerContactForm >
+          <form action="https://formspree.io/tiago.suzukayama@gmail.com" method="POST">
+            <Input
+              id="email"
+              type="email"
+              label="Email"
+              placeholder="john@doe.com"
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
+            <Input
+              id="subject"
+              label="Subject"
+              placeholder="Freelance job"
+              value={this.state.subject}
+              onChange={this.handleChange}
+            />
+            <TextArea
+              id="message"
+              label="Message"
+              placeholder="Lorem Impsum"
+              value={this.state.message}
+              onChange={this.handleChange}
+            />
+            <Button type="submit">Send</Button>
+          </form>
+        </ContainerContactForm>
     <Divider />
     <p>{"Made by me, with React <3"}</p>
   </Container>
