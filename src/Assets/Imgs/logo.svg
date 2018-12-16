@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="230.00453"
+     inkscape:cx="-13.566899"
      inkscape:cy="605.32001"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -53,7 +53,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.69999997;stroke-miterlimit:4;stroke-dasharray:64.79999938, 2.69999996999999992;stroke-opacity:1;stroke-dashoffset:0"
+       style="fill:none;fill-opacity:1;stroke:#00000e;stroke-width:2.69999997;stroke-miterlimit:4;stroke-dasharray:64.79999938, 2.69999996999999992;stroke-opacity:1;stroke-dashoffset:0"
        id="rect4534"
        width="80"
        height="80"
@@ -62,7 +62,7 @@
        transform="rotate(-45)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';letter-spacing:0px;word-spacing:0px;fill:#212121;fill-opacity:1;stroke:#00000e;stroke-width:0.26458332;stroke-opacity:1;"
        x="-47.078285"
        y="205.35445"
        id="text4538"
@@ -71,6 +71,6 @@
          id="tspan4536"
          x="-47.078285"
          y="205.35445"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';fill:#ffffff;stroke-width:0.26458332;fill-opacity:1;">Ts</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';fill:#212121;stroke-width:0.26458332;fill-opacity:1;stroke:#00000e;stroke-opacity:1;">Ts</tspan></text>
   </g>
 </svg>
