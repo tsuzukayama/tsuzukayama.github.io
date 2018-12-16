@@ -1,6 +1,6 @@
-tusuzukayama.github.io
+tsuzukayama.github.io
 ======
-**tusuzukayama.github.io** is my personal/project website. You will find it under [tusuzukayama.github.io](http://tusuzukayama.github.io).
+**tsuzukayama.github.io** is my personal/project website. You will find it under [tsuzukayama.github.io](http://tsuzukayama.github.io).
 
 ## Technology
 * [React](https://github.com/facebook/react)
