@@ -94,6 +94,7 @@ export class Contact extends React.Component<{}, IState>{
           <form action="https://formspree.io/tiago.suzukayama@gmail.com" method="POST">
             <Input
               id="email"
+              name="email"
               type="email"
               label="Email"
               placeholder="john@doe.com"
@@ -102,6 +103,7 @@ export class Contact extends React.Component<{}, IState>{
             />
             <Input
               id="subject"
+              name="subject"
               label="Subject"
               placeholder="Freelance job"
               value={this.state.subject}
@@ -109,6 +111,7 @@ export class Contact extends React.Component<{}, IState>{
             />
             <TextArea
               id="message"
+              name="message"
               label="Message"
               placeholder="Lorem Impsum"
               value={this.state.message}
