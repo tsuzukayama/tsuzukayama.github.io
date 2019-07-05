@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Element } from 'react-scroll';
-import * as githubLogo from '../Assets/Imgs/github-logo.svg';
-import * as linkedinLogo from '../Assets/Imgs/linkedin-logo.svg';
-import * as twitterLogo from '../Assets/Imgs/twitter-logo.svg';
+import githubLogo from '../Assets/Imgs/github-logo.svg';
+import linkedinLogo from '../Assets/Imgs/linkedin-logo.svg';
+import twitterLogo from '../Assets/Imgs/twitter-logo.svg';
 import { Button } from '../Shared/Button';
 import { Input } from '../Shared/Input';
 import { TextArea } from '../Shared/TextArea';
@@ -74,8 +74,8 @@ export class Contact extends React.Component<{}, IState>{
     subject: '',
   } as IState;
 
-  public handleChange = (event: any) => {
-    const change = {};
+  public handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const change: any = {};
     change[event.target.id] = event.target.value
     this.setState(change)
   }

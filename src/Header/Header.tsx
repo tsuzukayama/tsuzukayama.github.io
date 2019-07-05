@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-scroll';
-import * as backgroundImage from '../Assets/Imgs/header-background.png';
-import * as logo from '../Assets/Imgs/logo.png';
+import backgroundImage from '../Assets/Imgs/header-background.png';
+import logo from '../Assets/Imgs/logo.png';
 import { Button, TextButton } from '../Shared/Button';
 import styled from '../Theme';
 

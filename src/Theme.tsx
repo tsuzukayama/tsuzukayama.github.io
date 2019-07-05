@@ -10,12 +10,7 @@ const {
 } = styledComponents as ThemedStyledComponentsModule<any> as ThemedStyledComponentsModule<IThemeInterface>;
 
 export interface IThemeInterface {
-    color: {
-        black: string;
-        dark: string;
-        lightGrey: string;
-        white: string;
-    };
+    color: any;
     fontSize: string;
     fontFamily: string;
 }
