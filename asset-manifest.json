@@ -1,12 +1,20 @@
 {
-  "main.css": "static/css/main.cf7c7ee6.css",
-  "main.css.map": "static/css/main.cf7c7ee6.css.map",
-  "main.js": "static/js/main.b1d2cf15.js",
-  "main.js.map": "static/js/main.b1d2cf15.js.map",
-  "static\\media\\Inconsolata-Bold.ttf": "static/media/Inconsolata-Bold.b0312789.ttf",
-  "static\\media\\Inconsolata-Regular.ttf": "static/media/Inconsolata-Regular.29b00ebc.ttf",
-  "static\\media\\github-logo.svg": "static/media/github-logo.07b5252f.svg",
-  "static\\media\\header-background.png": "static/media/header-background.3cbfd0cd.png",
-  "static\\media\\linkedin-logo.svg": "static/media/linkedin-logo.f69906ca.svg",
-  "static\\media\\twitter-logo.svg": "static/media/twitter-logo.14700e15.svg"
+  "files": {
+    "main.css": "/static/css/main.71a5b6ad.chunk.css",
+    "main.js": "/static/js/main.c884ba8d.chunk.js",
+    "main.js.map": "/static/js/main.c884ba8d.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.2c93f7be.chunk.js": "/static/js/2.2c93f7be.chunk.js",
+    "static/js/2.2c93f7be.chunk.js.map": "/static/js/2.2c93f7be.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a08dae4a61546ffcb5c173173fdd354f.js": "/precache-manifest.a08dae4a61546ffcb5c173173fdd354f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.71a5b6ad.chunk.css.map": "/static/css/main.71a5b6ad.chunk.css.map",
+    "static/media/index.css": "/static/media/Inconsolata-Regular.29b00ebc.ttf",
+    "static/media/github-logo.svg": "/static/media/github-logo.07b5252f.svg",
+    "static/media/header-background.png": "/static/media/header-background.3cbfd0cd.png",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.f69906ca.svg",
+    "static/media/twitter-logo.svg": "/static/media/twitter-logo.14700e15.svg"
+  }
 }
